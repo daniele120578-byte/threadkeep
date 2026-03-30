@@ -3,6 +3,6 @@ __MACOSX/
 *.zip
 CLAUDE.md
 MASTER_PROMPT.md
-scripts/
+scripts/translate.js
 vendor/ExtPay.module.js
 node_modules/
