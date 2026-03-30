@@ -150,7 +150,7 @@ function injectStyles() {
 
 function getAdapter() {
   const hostname = window.location.hostname;
-  return ADAPTERS.find(a => a.matches.some(m => hostname.includes(m)));
+  return ADAPTERS.find(a => a.matches.some(m => hostname === m || hostname.endsWith('.' + m)));
 }
 
 function createSaveButton(adapter, resp) {
