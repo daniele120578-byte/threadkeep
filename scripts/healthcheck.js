@@ -45,7 +45,11 @@ const ALERT_EMAIL = process.env.HEALTHCHECK_ALERT_EMAIL || '';
 const alertErrors = [];
 
 async function checkPlatform(platform) {
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  const browser = await puppeteer.launch({
+    headless: true,
+    executablePath: '/usr/bin/google-chrome-stable',
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+  });
   const page = await browser.newPage();
   page.setDefaultTimeout(30000);
 
