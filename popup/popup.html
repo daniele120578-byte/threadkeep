@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threadkeep</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="tk-header">
+    <div class="tk-logo">
+      <span>tk</span>
+    </div>
+    <span class="tk-title">Threadkeep</span>
+    <span class="tk-counter" id="tk-counter">0</span>
+  </div>
+
+  <div class="tk-search">
+    <input type="text" id="tk-search-input" data-i18n="search_placeholder">
+  </div>
+
+  <div class="tk-entries" id="tk-entries">
+    <div class="tk-empty" id="tk-empty">
+      <div class="tk-empty-icon">&#8594;</div>
+      <div data-i18n="empty_state_message"></div>
+    </div>
+  </div>
+
+  <div class="tk-footer">
+    <button id="tk-open-library" data-i18n="open_library_label"></button>
+    <button id="tk-upgrade" data-i18n="upgrade_pro_label"></button>
+  </div>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

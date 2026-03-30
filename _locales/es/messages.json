@@ -1,0 +1,40 @@
+{
+  "ext_name": { "message": "Threadkeep - Guarda Chats IA en 1 Clic", "description": "Extension name" },
+  "ext_short_name": { "message": "Threadkeep", "description": "Extension short name" },
+  "ext_description": { "message": "Guarda prompts y respuestas de IA en 1 clic. Busca, copia y exporta desde tu biblioteca local. Claude, ChatGPT, Gemini, Perplexity.", "description": "Extension description" },
+  "save_button_label": { "message": "Guardar", "description": "Label on the save button" },
+  "saved_feedback_label": { "message": "Guardado ✓", "description": "Feedback after successful save" },
+  "save_duplicate_label": { "message": "Ya guardado", "description": "Feedback when duplicate detected" },
+  "save_limit_label": { "message": "Límite alcanzado", "description": "Feedback when free tier limit reached" },
+  "save_error_label": { "message": "Error", "description": "Feedback when save fails" },
+  "search_placeholder": { "message": "Busca en tus conversaciones...", "description": "Search input placeholder" },
+  "tag_input_placeholder": { "message": "Añadir etiqueta...", "description": "Tag input placeholder" },
+  "open_library_label": { "message": "Abrir biblioteca completa", "description": "Link to open library tab" },
+  "filter_all_label": { "message": "Todos", "description": "Filter chip for all items" },
+  "jump_to_chat_label": { "message": "Ir al chat", "description": "Button to return to original conversation" },
+  "export_md_label": { "message": "Exportar MD", "description": "Export entry as markdown" },
+  "export_txt_label": { "message": "Exportar TXT", "description": "Export entry as plain text" },
+  "delete_label": { "message": "Eliminar", "description": "Delete button label" },
+  "copy_label": { "message": "Copiar", "description": "Button to copy response text" },
+  "copied_feedback_label": { "message": "¡Copiado!", "description": "Feedback after copying" },
+  "upgrade_pro_label": { "message": "Actualizar a Pro", "description": "Upgrade CTA button" },
+  "free_limit_message": {
+    "message": "Has alcanzado el límite gratuito de $LIMIT$ guardados. Actualiza a Pro para ilimitado.",
+    "description": "Free tier limit reached message",
+    "placeholders": { "limit": { "content": "$1", "example": "30" } }
+  },
+  "saved_count_label": {
+    "message": "$COUNT$ guardados",
+    "description": "Saved items count in popup header",
+    "placeholders": { "count": { "content": "$1", "example": "24" } }
+  },
+  "duplicate_warning_message": { "message": "Es posible que ya hayas guardado algo similar antes.", "description": "Duplicate detection warning" },
+  "error_save_failed": { "message": "Error al guardar. Inténtalo de nuevo.", "description": "Error when saving fails" },
+  "error_storage_unavailable": { "message": "Almacenamiento no disponible. Recarga la extensión.", "description": "Error when storage is inaccessible" },
+  "pro_monthly_label": { "message": "Pro — mensual", "description": "Monthly Pro plan label" },
+  "pro_annual_label": { "message": "Pro — anual", "description": "Annual Pro plan label" },
+  "pro_annual_saving_label": { "message": "Ahorra 37%", "description": "Annual plan saving badge" },
+  "empty_library_message": { "message": "No hay conversaciones guardadas. Empieza a guardar respuestas de IA con 1 clic.", "description": "Empty library state" },
+  "empty_search_message": { "message": "No hay resultados para tu búsqueda.", "description": "Empty search state" },
+  "empty_state_message": { "message": "Aún no hay guardados", "description": "Empty popup state" }
+}

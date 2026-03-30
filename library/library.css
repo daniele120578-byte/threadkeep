@@ -1,0 +1,230 @@
+:root {
+  --tk-accent: #c0392b;
+  --tk-text-primary: #E8E6E1;
+  --tk-text-secondary: #A8A49E;
+  --tk-text-tertiary: #6B6760;
+  --tk-bg-dark: #1A1917;
+  --tk-surface-dark: #222120;
+  --tk-border: 0.5px solid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  padding: 24px;
+}
+
+.lib-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: var(--tk-border) var(--tk-text-tertiary);
+  margin-bottom: 20px;
+}
+
+.lib-logo {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--tk-accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lib-logo span {
+  color: var(--tk-accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lib-title {
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.lib-counter {
+  font-size: 12px;
+  color: var(--tk-text-secondary);
+  background: var(--tk-surface-dark);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.lib-toolbar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.lib-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.lib-search input {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--tk-surface-dark);
+  border: var(--tk-border) var(--tk-text-tertiary);
+  border-radius: 6px;
+  color: var(--tk-text-primary);
+  font-size: 13px;
+}
+
+.lib-search input::placeholder {
+  color: var(--tk-text-tertiary);
+}
+
+.lib-search input:focus {
+  outline: none;
+  border-color: var(--tk-accent);
+}
+
+.lib-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lib-filter-label {
+  font-size: 12px;
+  color: var(--tk-text-tertiary);
+}
+
+.lib-filter-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.lib-tag-chip {
+  font-size: 11px;
+  padding: 4px 8px;
+  background: var(--tk-surface-dark);
+  border: var(--tk-border) var(--tk-text-tertiary);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--tk-text-secondary);
+}
+
+.lib-tag-chip:hover,
+.lib-tag-chip.active {
+  border-color: var(--tk-accent);
+  color: var(--tk-text-primary);
+}
+
+.lib-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lib-entry {
+  position: relative;
+  background: var(--tk-surface-dark);
+  border: var(--tk-border) var(--tk-text-tertiary);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.lib-entry:hover {
+  border-color: var(--tk-accent);
+}
+
+.lib-entry-prompt {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--tk-text-primary);
+}
+
+.lib-entry-response {
+  font-size: 13px;
+  color: var(--tk-text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.lib-entry-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--tk-text-tertiary);
+  margin-bottom: 12px;
+}
+
+.lib-entry-platform {
+  color: var(--tk-accent);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.lib-entry-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lib-entry-actions button {
+  font-size: 12px;
+  padding: 6px 10px;
+  background: transparent;
+  border: var(--tk-border) var(--tk-text-tertiary);
+  border-radius: 4px;
+  color: var(--tk-text-secondary);
+  cursor: pointer;
+}
+
+.lib-entry-actions button:hover {
+  border-color: var(--tk-accent);
+  color: var(--tk-text-primary);
+}
+
+.lib-entry-delete {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--tk-text-tertiary);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.lib-entry-delete:hover {
+  color: var(--tk-accent);
+}
+
+.lib-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--tk-text-tertiary);
+}
+
+.lib-hidden {
+  display: none;
+}
+
+.lib-platform-claude { color: #c0392b; }
+.lib-platform-chatgpt { color: #10a37f; }
+.lib-platform-gemini { color: #1a73e8; }
+.lib-platform-perplexity { color: #e8820c; }

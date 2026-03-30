@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_ext_name__",
+  "short_name": "__MSG_ext_short_name__",
+  "description": "__MSG_ext_description__",
+  "version": "1.0.0",
+  "default_locale": "en",
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://claude.ai/*",
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*",
+    "https://perplexity.ai/*",
+    "https://www.perplexity.ai/*",
+    "https://extensionpay.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background/background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://extensionpay.com/*"],
+      "js": ["vendor/ExtPay.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://claude.ai/*",
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://perplexity.ai/*",
+        "https://www.perplexity.ai/*"
+      ],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://extensionpay.com; object-src 'none'; frame-src 'none'"
+  },
+
+  "web_accessible_resources": [
+    { "resources": ["content/content.css"], "matches": ["https://claude.ai/*", "https://chat.openai.com/*", "https://chatgpt.com/*", "https://gemini.google.com/*", "https://perplexity.ai/*", "https://www.perplexity.ai/*"] },
+    { "resources": ["vendor/ExtPay.js"], "matches": ["https://extensionpay.com/*"] }
+  ]
+}

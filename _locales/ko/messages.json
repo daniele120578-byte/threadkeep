@@ -1,0 +1,40 @@
+{
+  "ext_name": { "message": "Threadkeep - AI 채팅을 1클릭으로 저장", "description": "Extension name" },
+  "ext_short_name": { "message": "Threadkeep", "description": "Extension short name" },
+  "ext_description": { "message": "AI 프롬프트와 응답을 1클릭으로 저장. 내 로컬 라이브러리에서 검색, 복사, 내보내기. Claude, ChatGPT, Gemini, Perplexity.", "description": "Extension description" },
+  "save_button_label": { "message": "저장", "description": "Label on the save button" },
+  "saved_feedback_label": { "message": "저장됨 ✓", "description": "Feedback after successful save" },
+  "save_duplicate_label": { "message": "이미 저장됨", "description": "Feedback when duplicate detected" },
+  "save_limit_label": { "message": "한도 초과", "description": "Feedback when free tier limit reached" },
+  "save_error_label": { "message": "오류", "description": "Feedback when save fails" },
+  "search_placeholder": { "message": "대화 검색...", "description": "Search input placeholder" },
+  "tag_input_placeholder": { "message": "태그 추가...", "description": "Tag input placeholder" },
+  "open_library_label": { "message": "전체 라이브러리 열기", "description": "Link to open library tab" },
+  "filter_all_label": { "message": "전체", "description": "Filter chip for all items" },
+  "jump_to_chat_label": { "message": "채팅으로 이동", "description": "Button to return to original conversation" },
+  "export_md_label": { "message": "MD 내보내기", "description": "Export entry as markdown" },
+  "export_txt_label": { "message": "TXT 내보내기", "description": "Export entry as plain text" },
+  "delete_label": { "message": "삭제", "description": "Delete button label" },
+  "copy_label": { "message": "복사", "description": "Button to copy response text" },
+  "copied_feedback_label": { "message": "복사됨!", "description": "Feedback after copying" },
+  "upgrade_pro_label": { "message": "Pro로 업그레이드", "description": "Upgrade CTA button" },
+  "free_limit_message": {
+    "message": "무료 한도 $LIMIT$회 저장이 끝났습니다. 무제한은 Pro로 업그레이드하세요.",
+    "description": "Free tier limit reached message",
+    "placeholders": { "limit": { "content": "$1", "example": "30" } }
+  },
+  "saved_count_label": {
+    "message": "$COUNT$개 저장됨",
+    "description": "Saved items count in popup header",
+    "placeholders": { "count": { "content": "$1", "example": "24" } }
+  },
+  "duplicate_warning_message": { "message": "이전에 비슷한 항목을 저장한 적이 있을 수 있습니다.", "description": "Duplicate detection warning" },
+  "error_save_failed": { "message": "저장에 실패했습니다. 다시 시도해 주세요.", "description": "Error when saving fails" },
+  "error_storage_unavailable": { "message": "저장소를 사용할 수 없습니다. 확장을 다시 불러와 주세요.", "description": "Error when storage is inaccessible" },
+  "pro_monthly_label": { "message": "Pro — 월간", "description": "Monthly Pro plan label" },
+  "pro_annual_label": { "message": "Pro — 연간", "description": "Annual Pro plan label" },
+  "pro_annual_saving_label": { "message": "37% 절약", "description": "Annual plan saving badge" },
+  "empty_library_message": { "message": "저장된 대화가 없습니다. 1클릭으로 AI 응답 저장을 시작하세요.", "description": "Empty library state" },
+  "empty_search_message": { "message": "검색 결과가 없습니다.", "description": "Empty search state" },
+  "empty_state_message": { "message": "저장된 항목 없음", "description": "Empty popup state" }
+}

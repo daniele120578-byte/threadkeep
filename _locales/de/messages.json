@@ -1,0 +1,40 @@
+{
+  "ext_name": { "message": "Threadkeep - KI-Chats in 1 Klick speichern", "description": "Extension name" },
+  "ext_short_name": { "message": "Threadkeep", "description": "Extension short name" },
+  "ext_description": { "message": "Speichere KI-Prompts und -Antworten in 1 Klick. Suche, kopiere und exportiere aus deiner lokalen Bibliothek. Claude, ChatGPT, Gemini, Perplexity.", "description": "Extension description" },
+  "save_button_label": { "message": "Speichern", "description": "Label on the save button" },
+  "saved_feedback_label": { "message": "Gespeichert ✓", "description": "Feedback after successful save" },
+  "save_duplicate_label": { "message": "Bereits gespeichert", "description": "Feedback when duplicate detected" },
+  "save_limit_label": { "message": "Limit erreicht", "description": "Feedback when free tier limit reached" },
+  "save_error_label": { "message": "Fehler", "description": "Feedback when save fails" },
+  "search_placeholder": { "message": "Durchsuche deine Diskussionen...", "description": "Search input placeholder" },
+  "tag_input_placeholder": { "message": "Tag hinzufügen...", "description": "Tag input placeholder" },
+  "open_library_label": { "message": "Vollständige Bibliothek öffnen", "description": "Link to open library tab" },
+  "filter_all_label": { "message": "Alle", "description": "Filter chip for all items" },
+  "jump_to_chat_label": { "message": "Zum Chat gehen", "description": "Button to return to original conversation" },
+  "export_md_label": { "message": "MD exportieren", "description": "Export entry as markdown" },
+  "export_txt_label": { "message": "TXT exportieren", "description": "Export entry as plain text" },
+  "delete_label": { "message": "Löschen", "description": "Delete button label" },
+  "copy_label": { "message": "Kopieren", "description": "Button to copy response text" },
+  "copied_feedback_label": { "message": "Kopiert!", "description": "Feedback after copying" },
+  "upgrade_pro_label": { "message": "Auf Pro upgraden", "description": "Upgrade CTA button" },
+  "free_limit_message": {
+    "message": "Du hast das kostenlose Limit von $LIMIT$ Speicherungen erreicht. Upgrade auf Pro für unbegrenzt.",
+    "description": "Free tier limit reached message",
+    "placeholders": { "limit": { "content": "$1", "example": "30" } }
+  },
+  "saved_count_label": {
+    "message": "$COUNT$ gespeichert",
+    "description": "Saved items count in popup header",
+    "placeholders": { "count": { "content": "$1", "example": "24" } }
+  },
+  "duplicate_warning_message": { "message": "Du hast möglicherweise etwas Ähnliches bereits gespeichert.", "description": "Duplicate detection warning" },
+  "error_save_failed": { "message": "Speichern fehlgeschlagen. Bitte erneut versuchen.", "description": "Error when saving fails" },
+  "error_storage_unavailable": { "message": "Speicher nicht verfügbar. Bitte Extension neu laden.", "description": "Error when storage is inaccessible" },
+  "pro_monthly_label": { "message": "Pro — monatlich", "description": "Monthly Pro plan label" },
+  "pro_annual_label": { "message": "Pro — jährlich", "description": "Annual Pro plan label" },
+  "pro_annual_saving_label": { "message": "37% sparen", "description": "Annual plan saving badge" },
+  "empty_library_message": { "message": "Noch keine Diskussionen gespeichert. Beginne mit 1 Klick KI-Antworten zu speichern.", "description": "Empty library state" },
+  "empty_search_message": { "message": "Keine Ergebnisse für deine Suche.", "description": "Empty search state" },
+  "empty_state_message": { "message": "Noch nichts gespeichert", "description": "Empty popup state" }
+}

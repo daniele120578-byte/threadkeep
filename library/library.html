@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threadkeep</title>
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <div class="lib-header">
+    <div class="lib-logo">
+      <span>tk</span>
+    </div>
+    <span class="lib-title">Threadkeep</span>
+    <span class="lib-counter" id="lib-counter">0</span>
+  </div>
+
+  <div class="lib-toolbar">
+    <div class="lib-search">
+      <input type="text" id="lib-search-input" data-i18n="search_placeholder">
+    </div>
+    <div class="lib-filters">
+      <div class="lib-filter-label" data-i18n="filter_all_label"></div>
+      <div class="lib-filter-tags" id="lib-tags"></div>
+    </div>
+  </div>
+
+  <div class="lib-entries" id="lib-entries">
+    <div class="lib-empty" id="lib-empty">
+      <div data-i18n="empty_library_message"></div>
+    </div>
+  </div>
+
+  <script src="library.js" type="module"></script>
+</body>
+</html>

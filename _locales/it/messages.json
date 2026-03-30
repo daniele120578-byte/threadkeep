@@ -1,0 +1,40 @@
+{
+  "ext_name": { "message": "Threadkeep - Salva Chat AI in 1 Click", "description": "Extension name" },
+  "ext_short_name": { "message": "Threadkeep", "description": "Extension short name" },
+  "ext_description": { "message": "Salva prompt e risposte AI in 1 click. Cerca, copia ed esporta dalla tua libreria locale. Claude, ChatGPT, Gemini, Perplexity.", "description": "Extension description" },
+  "save_button_label": { "message": "Salva", "description": "Label on the save button" },
+  "saved_feedback_label": { "message": "Salvato ✓", "description": "Feedback after successful save" },
+  "save_duplicate_label": { "message": "Già salvato", "description": "Feedback when duplicate detected" },
+  "save_limit_label": { "message": "Limite raggiunto", "description": "Feedback when free tier limit reached" },
+  "save_error_label": { "message": "Errore", "description": "Feedback when save fails" },
+  "search_placeholder": { "message": "Cerca nelle tue discussioni...", "description": "Search input placeholder" },
+  "tag_input_placeholder": { "message": "Aggiungi tag...", "description": "Tag input placeholder" },
+  "open_library_label": { "message": "Apri libreria completa", "description": "Link to open library tab" },
+  "filter_all_label": { "message": "Tutti", "description": "Filter chip for all items" },
+  "jump_to_chat_label": { "message": "Vai alla chat", "description": "Button to return to original conversation" },
+  "export_md_label": { "message": "Esporta MD", "description": "Export entry as markdown" },
+  "export_txt_label": { "message": "Esporta TXT", "description": "Export entry as plain text" },
+  "delete_label": { "message": "Elimina", "description": "Delete button label" },
+  "copy_label": { "message": "Copia", "description": "Button to copy response text" },
+  "copied_feedback_label": { "message": "Copiato!", "description": "Feedback after copying" },
+  "upgrade_pro_label": { "message": "Passa a Pro", "description": "Upgrade CTA button" },
+  "free_limit_message": {
+    "message": "Hai raggiunto il limite gratuito di $LIMIT$ salvataggi. Passa a Pro per illimitati.",
+    "description": "Free tier limit reached message",
+    "placeholders": { "limit": { "content": "$1", "example": "30" } }
+  },
+  "saved_count_label": {
+    "message": "$COUNT$ salvati",
+    "description": "Saved items count in popup header",
+    "placeholders": { "count": { "content": "$1", "example": "24" } }
+  },
+  "duplicate_warning_message": { "message": "Potresti aver salvato qualcosa di simile in precedenza.", "description": "Duplicate detection warning" },
+  "error_save_failed": { "message": "Salvataggio fallito. Riprova.", "description": "Error when saving fails" },
+  "error_storage_unavailable": { "message": "Archiviazione non disponibile. Ricarica l'estensione.", "description": "Error when storage is inaccessible" },
+  "pro_monthly_label": { "message": "Pro — mensile", "description": "Monthly Pro plan label" },
+  "pro_annual_label": { "message": "Pro — annuale", "description": "Annual Pro plan label" },
+  "pro_annual_saving_label": { "message": "Risparmia 37%", "description": "Annual plan saving badge" },
+  "empty_library_message": { "message": "Nessuna discussione salvata. Inizia a salvare le risposte AI con 1 click.", "description": "Empty library state" },
+  "empty_search_message": { "message": "Nessun risultato per la tua ricerca.", "description": "Empty search state" },
+  "empty_state_message": { "message": "Nessun salvataggio", "description": "Empty popup state" }
+}

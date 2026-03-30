@@ -1,0 +1,40 @@
+{
+  "ext_name": { "message": "Threadkeep - Sauvegarde Chats IA en 1 Clic", "description": "Extension name" },
+  "ext_short_name": { "message": "Threadkeep", "description": "Extension short name" },
+  "ext_description": { "message": "Sauvegardez prompts et réponses IA en 1 clic. Recherchez, copiez et exportez depuis la bibliothèque locale. Claude, ChatGPT, Gemini, Perplexity.", "description": "Extension description" },
+  "save_button_label": { "message": "Sauvegarder", "description": "Label on the save button" },
+  "saved_feedback_label": { "message": "Sauvegardé ✓", "description": "Feedback after successful save" },
+  "save_duplicate_label": { "message": "Déjà sauvegardé", "description": "Feedback when duplicate detected" },
+  "save_limit_label": { "message": "Limite atteinte", "description": "Feedback when free tier limit reached" },
+  "save_error_label": { "message": "Erreur", "description": "Feedback when save fails" },
+  "search_placeholder": { "message": "Recherchez dans vos discussions...", "description": "Search input placeholder" },
+  "tag_input_placeholder": { "message": "Ajouter un tag...", "description": "Tag input placeholder" },
+  "open_library_label": { "message": "Ouvrir la bibliothèque complète", "description": "Link to open library tab" },
+  "filter_all_label": { "message": "Tous", "description": "Filter chip for all items" },
+  "jump_to_chat_label": { "message": "Aller au chat", "description": "Button to return to original conversation" },
+  "export_md_label": { "message": "Exporter MD", "description": "Export entry as markdown" },
+  "export_txt_label": { "message": "Exporter TXT", "description": "Export entry as plain text" },
+  "delete_label": { "message": "Supprimer", "description": "Delete button label" },
+  "copy_label": { "message": "Copier", "description": "Button to copy response text" },
+  "copied_feedback_label": { "message": "Copié !", "description": "Feedback after copying" },
+  "upgrade_pro_label": { "message": "Passer à Pro", "description": "Upgrade CTA button" },
+  "free_limit_message": {
+    "message": "Vous avez atteint la limite gratuite de $LIMIT$ sauvegardes. Passez à Pro pour illimité.",
+    "description": "Free tier limit reached message",
+    "placeholders": { "limit": { "content": "$1", "example": "30" } }
+  },
+  "saved_count_label": {
+    "message": "$COUNT$ sauvegardés",
+    "description": "Saved items count in popup header",
+    "placeholders": { "count": { "content": "$1", "example": "24" } }
+  },
+  "duplicate_warning_message": { "message": "Vous avez peut-être sauvegardé quelque chose de similaire auparavant.", "description": "Duplicate detection warning" },
+  "error_save_failed": { "message": "Échec de la sauvegarde. Veuillez réessayer.", "description": "Error when saving fails" },
+  "error_storage_unavailable": { "message": "Stockage indisponible. Veuillez recharger l'extension.", "description": "Error when storage is inaccessible" },
+  "pro_monthly_label": { "message": "Pro — mensuel", "description": "Monthly Pro plan label" },
+  "pro_annual_label": { "message": "Pro — annuel", "description": "Annual Pro plan label" },
+  "pro_annual_saving_label": { "message": "Économisez 37%", "description": "Annual plan saving badge" },
+  "empty_library_message": { "message": "Aucune discussion sauvegardée. Commencez à sauvegarder les réponses IA en 1 clic.", "description": "Empty library state" },
+  "empty_search_message": { "message": "Aucun résultat pour votre recherche.", "description": "Empty search state" },
+  "empty_state_message": { "message": "Aucune sauvegarde", "description": "Empty popup state" }
+}

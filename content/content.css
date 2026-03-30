@@ -1,0 +1,18 @@
+:root {
+  --tk-accent: #c0392b;
+  --tk-text-primary: #E8E6E1;
+}
+
+.tk-save-btn {
+  background: var(--tk-accent);
+  color: var(--tk-text-primary);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.tk-save-btn:hover {
+  opacity: 0.9;
+}
